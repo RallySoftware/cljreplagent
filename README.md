@@ -1,10 +1,16 @@
 # cljreplagent
 
-A Clojure library designed to ... well, that part is up to you.
+A Clojure library that enables a remote repl when started in any JVM using a `-javaagent` flag.
 
 ## Usage
 
-FIXME
+    java -javaagent:/path/to/cljreplagent-0.1.0-SNAPSHOT-standalone.jar $OTHER_OPTIONS -jar anyjavaprogram.jar
+
+then connect to the repl server with
+
+    lein repl :connect localhost:4567
+
+The repl port can be set with a JVM property.
 
 ## License
 
